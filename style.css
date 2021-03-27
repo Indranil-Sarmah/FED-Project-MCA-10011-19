@@ -10,13 +10,14 @@ body{
     display: grid;
     grid-template-rows: 100px 500px;
     grid-template-columns: auto;
+    background: url(images/bg.png);
+    background-size: cover;
 }
 
 .navbar {
     font-size: 18px;
     padding-bottom: 10px;
     position: fixed;
-    background-color: aqua;
     width: 100%;
     
   }
@@ -26,8 +27,9 @@ body{
     display: none;
   }
   
-  .nav-links,
-  .logo {
+  .nav-links
+  /* .logo { */
+  {
     text-decoration: none;
     color: rgba(7, 7, 7, 0.7);
   }
@@ -36,13 +38,18 @@ body{
     text-align: center;
     margin: 15px auto;
   }
-  
-  .logo {
+  .logo{
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+  /* .logo {
     display: inline-block;
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
-  }
+  } */
   
   .navbar-toggle {
     position: absolute;
@@ -89,18 +96,24 @@ body{
       margin-left: 40px;
     }
   
-    .logo {
-      margin-top: 0;
-    }
-  
+    
     .navbar-toggle {
       display: none;
     }
   
-    .logo:hover,
     .nav-links:hover {
       color: rgb(0, 0, 0);
     }
+
+    body{
+      display: grid;
+      grid-template-rows: 100px 500px;
+      grid-template-columns: auto;
+      background: url(images/bg.png);
+      background-size:cover;
+  }
+
+    
   }
   
 
