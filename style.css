@@ -3,15 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
 
 body{
-    display: grid;
-    grid-template-rows: 100px 500px;
-    grid-template-columns: auto;
-    background: url(images/bg.png);
-    background-size: cover;
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows:150px 400px;
 }
 
 .navbar {
@@ -44,12 +45,6 @@ body{
     margin-left: 20px;
     padding-top: 20px;
   }
-  /* .logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
-  } */
   
   .navbar-toggle {
     position: absolute;
@@ -86,6 +81,7 @@ body{
       margin-right: 30px;
       flex-direction: row;
       justify-content: flex-end;
+      
     }
   
     .main-nav li {
@@ -104,16 +100,101 @@ body{
     .nav-links:hover {
       color: rgb(0, 0, 0);
     }
-
-    body{
-      display: grid;
-      grid-template-rows: 100px 500px;
-      grid-template-columns: auto;
-      background: url(images/bg.png);
-      background-size:cover;
-  }
-
+  
     
   }
-  
+
+  main{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: auto;
+    
+  }
+
+  main .content{
+    padding: 50px;
+    grid-column: 1/2;
+    /* border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    letter-spacing: 1px;
+    font-size:small;
+    font-weight: bold;
+
+  }
+
+  .ctitle{
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .content P{
+    font-weight: lighter;
+  }
+
+  main .imagecontainer {
+    grid-column: 2/4;
+    /* border: 1px solid black; */
+    position: relative;
+    
+  }
+
+  main .imagecontainer img{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 300px;
+    height: auto;
+  }
+
+  .btn1{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: rgb(8, 8, 8);
+    margin-top: 10px;
+    background:linear-gradient(to right,rgb(99, 99, 235),rgb(171, 171, 238),rgb(224, 153, 224));
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+  }
+
+  .btn1 :hover{
+    background:linear-gradient(to right,rgb(158, 99, 235),rgb(171, 171, 238),rgb(166, 151, 231));
+    color: rgb(48, 45, 45);
+  }
+
+
+  @media screen and (max-width: 768px){
+   body{
+     background-image:url(images/mbg.png);
+     background-size:initial;
+     background-repeat: no-repeat;
+   }
+
+   main{
+     margin-top: 100px;
+     overflow-y: hidden;
+   }
+
+   main .content{
+     justify-items: left;
+     margin-right: 100px;
+   }
+
+   main .content h1{
+     font-size:30px;
+   }
+
+   main .imagecontainer{
+     display: none;
+     overflow: hidden;
+   }
+
+   .nav-links:hover {
+    color: rgb(0, 0, 0);
+  }
+
+
+  }
 
