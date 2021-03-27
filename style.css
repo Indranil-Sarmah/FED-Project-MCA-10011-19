@@ -177,6 +177,7 @@ body{
    main .content{
      justify-items: left;
      margin-right: 100px;
+     overflow-y: hidden;
    }
 
    main .content h1{
