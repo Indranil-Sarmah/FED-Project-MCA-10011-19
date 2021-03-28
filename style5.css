@@ -6,12 +6,12 @@
 }
 
 body{
-  background-image: url(images/bg2.png);
+  background-image: url(images/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows:120px 400px;
+  grid-template-rows:130px 400px;
 }
 
 .navbar {
@@ -19,6 +19,7 @@ body{
     padding-bottom: 10px;
     position: fixed;
     width: 100%;
+    
   }
   
   .main-nav {
@@ -68,7 +69,6 @@ body{
       padding-bottom: 0;
       height: 70px;
       align-items: center;
-      
     }
   
     #chkToggle:checked + ul.main-nav {
@@ -105,96 +105,106 @@ body{
 
   main{
     display: grid;
-    grid-template-columns: 400px 800px;
+    grid-template-columns: 500px 300px;
     grid-template-rows: auto;
+    margin-left: 90px;
+    /* border: 1px solid black; */
     
   }
 
   main .content{
     padding-left: 50px;
-    margin-top: 0px;
-    grid-column: 2/3;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: 1/2;
+    /* border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
     letter-spacing: 1px;
     font-size:small;
     font-weight: bold;
-    text-align: center;
 
   }
 
-  .content form{
-      width: 100%;
-  }
-
-  form select{
-      width: 100%;
-      padding: 10px;
-      border-radius:10px;
-      margin-bottom: 20px;
-      border: 1px solid rgb(67, 61, 151);
-      border: 1px solid rgb(124, 126, 236);
-
-  }
-
-  .ctitle1{
-    font-size:30px;
+  .ctitle{
+    font-size:25px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
-
-
-  .content P{
-    font-weight: lighter;
-  }
-
-  .content .secondcontent{
-      padding-bottom: 50px;
-  }
+ 
 
   main .imagecontainer {
-    grid-column: 1/2;
+    grid-column: 2/4;
     /* border: 1px solid black; */
     position: relative;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     
   }
 
   main .imagecontainer img{
     position: absolute;
-    top: 0px;
-    left: 50px;
-    width: 310px;
+    top: 20px;
+    left: 190px;
+    width: 500px;
     height: auto;
   }
 
-  .doseselect{
-      display: flex;
-      justify-content:space-around;
+ 
+
+  .btn1{
+    color: rgb(247, 247, 247);
+    background:linear-gradient(to right,rgb(177, 177, 241),rgb(171, 171, 238),rgb(224, 153, 224));
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 120px;
+    padding: 7px;
+    border: 1px solid rgb(122, 122, 163);
+    box-shadow: 2px 3px rgb(121, 120, 122);
   }
 
-  .lab{
-      margin-left:-200px;
-  }
-
-  .submitbtn{
-
+  .inputbox{
       padding: 7px;
-      margin-top: 50px;
-      width: 80%;
-      border-radius: 6px;
-      background: linear-gradient(to right,rgb(170, 170, 236),rgb(219, 174, 236));
-      font-weight: bold;
-      color: rgb(24, 23, 23);
-      cursor: pointer;
-      box-shadow:2px 3px rgb(138, 135, 135);
-      border: 1px solid rgb(124, 126, 236);
+      width: 70%;
+      border: 1px solid rgb(118, 118, 197);
+      border-radius: 5px;
   }
 
+  .messagebox{
+      border: 1px solid rgb(118, 118, 187);
+  }
 
+  .footer{
+      position: relative;
+  }
+
+  #lab_social_icon_footer {
+    padding: 40px 0;
+    align-items: center;
+    position: absolute;
+    top:250px;
+    left:350px
+  }
+  
+  #lab_social_icon_footer a {
+    color: rgb(116, 158, 192);
+  }
+  
+  #lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+   
+  }
+  
+  #lab_social_icon_footer #social-gp:hover {
+    color: #d34836;
+  }
+  
+  #lab_social_icon_footer #social-em:hover {
+    color: #f39c12;
+  }
 
  
 
-/* mobile screen */
+
   @media screen and (max-width: 768px){
    body{
      background-image:url(images/mbg.png);
@@ -203,15 +213,15 @@ body{
    }
 
    main{
-     margin-top: 70px;
-     display: flex;
-     /* border: 1px solid black; */
+     margin-top: 20px;
+     margin-left: 30px;
+     overflow-y: hidden;
    }
 
    main .content{
      justify-items: left;
-     margin-right: 100px;
-    
+     margin-right: 110px;
+     overflow-y: hidden;
    }
 
    main .content h1{
@@ -228,27 +238,17 @@ body{
     padding-bottom: 10px;
   }
 
+  .inputbox{
+    padding: 5px;
+    width: 100%;
+    border: 1px solid rgb(118, 118, 197);
+    border-radius: 5px;
+}
   .navbar{
     background:linear-gradient(to bottom,white,rgb(200, 200, 238));
     border-radius: 3px;
   }
 
+}
 
-  .content form{
-        width: 350px;
-    }
-
-    form select{
-    width: 100%;
-    padding: 10px;
-    border-radius:10px;
-
-    }
-
-    .lab{
-        margin-left:-80px;
-    }
-
-
-  }
 
