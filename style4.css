@@ -233,12 +233,9 @@ body{
     border-radius: 3px;
   }
 
-  form{
-      /* border: 1px solid black; */
-  }
 
   .content form{
-        width: 400px;
+        width: 350px;
     }
 
     form select{
