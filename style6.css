@@ -6,12 +6,13 @@
 }
 
 body{
-  background-image: url(images/bg9.png);
+  background-image: url(images/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+
   display: grid;
   grid-template-columns:1fr;
-  grid-template-rows:120px 400px;
+  grid-template-rows:150px 400px;
 }
 
 .navbar {
@@ -19,6 +20,7 @@ body{
     padding-bottom: 10px;
     position: fixed;
     width: 100%;
+    
   }
   
   .main-nav {
@@ -68,7 +70,6 @@ body{
       padding-bottom: 0;
       height: 70px;
       align-items: center;
-      
     }
   
     #chkToggle:checked + ul.main-nav {
@@ -105,96 +106,12 @@ body{
 
   main{
     display: grid;
-    grid-template-columns: 400px 800px;
+    grid-template-columns: 600px 600px;
     grid-template-rows: auto;
     
   }
 
-  main .content{
-    padding-left: 50px;
-    margin-top: 0px;
-    grid-column: 2/3;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    font-size:small;
-    font-weight: bold;
-    text-align: center;
 
-  }
-
-  .content form{
-      width: 100%;
-  }
-
-  form select{
-      width: 100%;
-      padding: 10px;
-      border-radius:10px;
-      margin-bottom: 20px;
-      border: 1px solid rgb(67, 61, 151);
-      border: 1px solid rgb(124, 126, 236);
-
-  }
-
-  .ctitle1{
-    font-size:30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-
-
-  .content P{
-    font-weight: lighter;
-  }
-
-  .content .secondcontent{
-      padding-bottom: 50px;
-  }
-
-  main .imagecontainer {
-    grid-column: 1/2;
-    /* border: 1px solid black; */
-    position: relative;
-    
-  }
-
-  main .imagecontainer img{
-    position: absolute;
-    top: 0px;
-    left: 50px;
-    width: 310px;
-    height: auto;
-  }
-
-  .doseselect{
-      display: flex;
-      justify-content:space-around;
-  }
-
-  .lab{
-      margin-left:-200px;
-  }
-
-  .submitbtn{
-
-      padding: 7px;
-      margin-top: 50px;
-      width: 80%;
-      border-radius: 6px;
-      background: linear-gradient(to right,rgb(170, 170, 236),rgb(219, 174, 236));
-      font-weight: bold;
-      color: rgb(24, 23, 23);
-      cursor: pointer;
-      box-shadow:2px 3px rgb(138, 135, 135);
-      border: 1px solid rgb(124, 126, 236);
-  }
-
-
-
- 
-
-/* mobile screen */
   @media screen and (max-width: 768px){
    body{
      background-image:url(images/mbg.png);
@@ -203,24 +120,14 @@ body{
    }
 
    main{
-     margin-top: 70px;
-     display: flex;
-     /* border: 1px solid black; */
+     margin-top: 20px;
+     overflow-y: hidden;
    }
 
    main .content{
      justify-items: left;
      margin-right: 100px;
-    
-   }
-
-   main .content h1{
-     font-size:20px;
-   }
-
-   main .imagecontainer{
-     display: none;
-     overflow: hidden;
+     overflow-y: hidden;
    }
 
    .nav-links:hover {
@@ -228,27 +135,13 @@ body{
     padding-bottom: 10px;
   }
 
+
   .navbar{
     background:linear-gradient(to bottom,white,rgb(200, 200, 238));
     border-radius: 3px;
   }
 
-
-  .content form{
-        width: 350px;
-    }
-
-    form select{
-    width: 100%;
-    padding: 10px;
-    border-radius:10px;
-
-    }
-
-    .lab{
-        margin-left:-80px;
-    }
+ }
 
 
-  }
 
