@@ -167,6 +167,10 @@ body{
     background:linear-gradient(to right,rgb(177, 177, 241),rgb(171, 171, 238),rgb(211, 124, 211));
   }
 
+  .btn1:focus{
+    outline: none;
+  }
+
   .inputbox{
       padding: 7px;
       width: 70%;
