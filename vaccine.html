@@ -67,16 +67,16 @@
         <div class="content">
 
           <h1 class="ctitle1">Calculate the Price of Your Doses</h1>
-          <form action="">
+          <div class="form" id="formx">
             <label for="vacccine">Choose a vaccine type : </label>
             <br></br>
             <select id="vaccine" name="vaccine">
-              <option value="">Pfizer–BioNTech</option>
-              <option value="">Moderna</option>
-              <option value="">Sputnik V</option>
-              <option value="">Oxford–AstraZeneca</option>
-              <option value="">Covaxin</option>
-              <option value="">CovidSheild</option>
+              <option value="1">Pfizer–BioNTech</option>
+              <option value="2">Moderna</option>
+              <option value="3">Sputnik V</option>
+              <option value="4">Oxford–AstraZeneca</option>
+              <option value="5">Covaxin</option>
+              <option value="6">CovidSheild</option>
             </select>
             <label>Choose number of dose : </label>
             <br></br>
@@ -88,9 +88,11 @@
                 <input type="radio" id="3" name="dose" value="3">
                 <label class="lab" for="3">3</label>
             </div>
-            <input class="submitbtn" type="submit" value="Submit">
-          </form>
+            <input class="submitbtn" type="submit" onclick="calculate()" >
+            <h3 id="result"></h3>
+          </div>
         </div>
     </main>
+    <script src="app1.js"></script>
 </body>
 </html>

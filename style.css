@@ -161,6 +161,12 @@ body{
     box-shadow: 2px 3px rgb(121, 120, 122);
   }
 
+  .btn1:hover{
+    box-shadow: 2px 3px rgb(96, 44, 148);
+    background:linear-gradient(to right,rgb(177, 177, 241),rgb(171, 171, 238),rgb(218, 127, 218));
+  }
+  
+
  
 
 

@@ -122,11 +122,11 @@ body{
 
   }
 
-  .content form{
+  .content .form{
       width: 100%;
   }
 
-  form select{
+  .form select{
       width: 100%;
       padding: 10px;
       border-radius:10px;
@@ -190,7 +190,17 @@ body{
       border: 1px solid rgb(124, 126, 236);
   }
 
+  .submitbtn:hover{
+    box-shadow:2px 3px rgb(138, 84, 168);
+  }
 
+  .submitbtn:focus{
+    outline: none;
+  }
+
+  #result{
+    margin-top: 20px;
+  }
 
  
 
