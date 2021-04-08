@@ -134,8 +134,8 @@ body{
     background-repeat: no-repeat;
     box-shadow: 1px 2px 10px rgb(107, 48, 173);
     border-radius: 10%;
-    animation:slider 60s infinite linear ;
-    animation-delay: 10s;
+    animation:slider 60s infinite;
+    animation-timing-function: ease-out;
     background-image: url(images/jpginst/images/1_02.jpg);
     
   } 
