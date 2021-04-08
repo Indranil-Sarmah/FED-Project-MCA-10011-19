@@ -1,0 +1,23 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  #chartdiv {
+    max-width: 100%;
+    height: 800px;
+    background-color:#121212;
+  }
+
+  .links{
+      text-decoration: none;
+      color: rgb(252, 252, 252);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      background: rgb(224, 155, 26);
+      padding: 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      display: block;
+      width: 150px;
+      font-weight: bolder;
+  }

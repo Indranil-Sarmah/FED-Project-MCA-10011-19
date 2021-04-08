@@ -11,8 +11,11 @@
 
     <link rel="stylesheet" href="style5.css">
 </head>
-<body>
+<body onload="loading()">
+    <div id="loading"></div>
     <header>
+
+        
         <nav class="navbar">
             <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
                     <i class="fa fa-bars"></i>
@@ -85,8 +88,12 @@
                 </section>
           </div>
         </div>
-        
-        
     </main>
+    <script>
+      let loader = document.getElementById('loading');
+       function loading(){
+         loader.style.display='none';
+       }
+    </script>
 </body>
 </html>

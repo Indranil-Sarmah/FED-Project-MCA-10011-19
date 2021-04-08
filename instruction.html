@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="style6.css">
 </head>
-<body>
+<body onload="loading()" >
+    <div id="loading"></div>
     <header>
         <nav class="navbar">
             <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
@@ -37,7 +38,7 @@
           </nav>
     </header>   
     <main>
-         <h3>Instruction to follow before and after taking the vaccine</h4>
+        <h3>Instruction to follow before and after taking the vaccine</h4>
         <div class="content">
             
             <div class="imagecontainer">
@@ -56,7 +57,17 @@
                 <li class="nine">Do some exercise</li>
             </ul>
             </div>
-        </div>  
+        </div>
+        <div class="information">
+          <p>Latest Reports Of COVID-19 : <a href="report.html" class="links">Click Here</a></p>
+          <p>WHO Reports :<a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" class="links">Click Here</a></p>
+        </div>
     </main>
+    <script>
+       let loader = document.getElementById('loading');
+       function loading(){
+         loader.style.display='none';
+       }
+    </script>
 </body>
 </html>

@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="style4.css">
 </head>
-<body>
+<body onload="loading()">
+  <div id="loading"></div>
     <header>
         <nav class="navbar">
             <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
@@ -94,5 +95,11 @@
         </div>
     </main>
     <script src="app1.js"></script>
+    <script>
+      let loader = document.getElementById('loading');
+       function loading(){
+         loader.style.display='none';
+       }
+    </script>
 </body>
 </html>

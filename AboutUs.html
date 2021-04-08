@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="style3.css">
 </head>
-<body>
+<body onload="loading()">
+  <div id="loading"></div>
     <header>
         <nav class="navbar">
             <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
@@ -62,5 +63,13 @@
           </p> 
         </div>
     </main>
+
+    <script>
+       let loader = document.getElementById('loading');
+       function loading(){
+         
+         loader.style.display='none';
+       }
+    </script>
 </body>
 </html>
