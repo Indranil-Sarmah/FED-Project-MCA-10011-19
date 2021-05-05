@@ -1,4 +1,4 @@
-# FED Project Submission 
+# FED Project Submission , Indranil Sarmah (MCA /10011/19)  
 
 View the site here :
 
@@ -13,6 +13,12 @@ Beside to handle the contact us form, a 3rd party api 'fromspree' is used which 
 
 Moreover, this project is deployed on netlify.
 
+**Source code:** All the html files have their own css,js files for better readability of the souce code.
+
 **Name:** Indranil Sarmah
 
 **Rollno:** MCA/10011/19
+
+
+
+**NOTE:** This website is although responsive but does't support all the mobile devices , better if it would viewed on dekstop.
